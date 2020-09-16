@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-if</title>
+</head>
+
+<body>
+    <main id="app">
+        <input type="number" v-model="datos">
+        <h1 v-if="datos == 1">La tarde esta muy doleado </h1>
+        <h1 v-else-if="datos == 2">El dia esta muy doleado </h1>
+        <h1 v-else>Esta ,muy soleado apunto de quemar 2</h1>
+    </main>
+    <script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                datos: 0
+            }
+        })
+        /* var x = 5
+        if(x==10){
+            alert('El valor es 10')
+        }
+        else if(x==5){
+            alert('es 5')
+        }else{
+            alert('diferente')
+        } */
+    </script>
+</body>
+
+</html>
