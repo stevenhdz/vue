@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-html</title>
+</head>
+
+<body>
+    <main id="app">
+        <h1 v-text="texto"></h1>
+        <div v-html="codigoHtml"></div>
+    </main>
+    <script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                texto: 'soy un texto inyectado con vue',
+                codigoHtml: '<h1><i>soy codigo html</i></h1>'
+            }
+        })
+        /* var x = 5
+        if(x==10){
+            alert('El valor es 10')
+        }
+        else if(x==5){
+            alert('es 5')
+        }else{
+            alert('diferente')
+        } */
+    </script>
+</body>
+
+</html>
