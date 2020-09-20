@@ -10,18 +10,23 @@
 <body>
     <main id="app">
         <h1>Frutas favoritas</h1>
+        <!-- como menu -->
         <ul>
             <ol v-for="dato in datos">
                 {{dato.id}} . {{dato.valor}}
             </ol>
         </ul>
+
         <br>
+        <!-- como opcion -->
         <select name="" id="" v-model="datos.id">
             <option v-for="dato in datos" :value="dato.id">
                 {{dato.valor}}
             </option>
         </select>
+
         <br>
+        <!-- como input --> 
         <input type="text" :value="datos.id">
 
     </main>
